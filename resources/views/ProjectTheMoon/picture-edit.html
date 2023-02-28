@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/picedit.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=FC+Iconic&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Epilogue&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="assets/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Picture Edit</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/icon/icon.png">
+</head>
+
+<body>
+
+    <!-- Start navbar -->
+    <nav>
+        <div class='heading'>
+            <a href="picture1.html" id="logo"><img src="assets/img/imga.png" width="300px"></a>
+        </div>
+        <ul class='nav-link'>
+            <li><a href="picture1.html" id="pi">ภาพวาด</a></li>
+            <li><a href="#" id="pi">ภาพถ่าย</a></li>
+            <li><a href="#" id="pi">ไอค่อน</a></li>
+            <li><a href="#" id="pi">ภาพเสมือนจริง</a></li>
+            <li><a href="collection1.html" id="pi">คอลเลคชั่น</a></li>
+        </ul>
+
+        <div class="profile">
+            <a href="profile-picture.html" id="prof"><img src="assets/img/icon/profile.png" width="100px"></a>
+        </div>
+
+        <a class="addwork" href="upload.html"><button id="addw">เพิ่มผลงาน</button></a>
+    </nav>
+    <!-- End navbar -->
+
+    <!--upload-->
+    <div class="header">
+        <h1 id="hd">แก้ไขผลงาน Edit</h1>
+
+        <div class="upload">
+            <div class="preview">
+                <h3>ภาพตัวอย่าง</h3>
+                <div class="display-img"></div>
+            </div>
+
+            <div class="details">
+                <div class="headdetails">
+                    <h3>รายละเอียดผลงาน</h3>
+                </div>
+                <form action="profile-picture.html">
+                    <div class="details-img">
+                        <div class="add-img">
+                            <p><b>แก้ไขไฟล์รูปภาพ</b></p>
+                            <input type="file" id="image_input" accept="image/jpg , image/png">
+                            <div class="img-ed"></div>
+                        </div>
+                        <div class="name-img">
+                            <p><b>ชื่อผลงาน</b></p>
+                            <input type="text" id="text_input" size="30px">
+                        </div>
+
+                        <div class="description-img">
+                            <p><b>รายละเอียดผลงาน</b></p>
+                            <textarea name=description id=description placeholder="เพิ่มคำอธิบายผลงานของคุณ...."
+                                rows="10" cols=50"></textarea>
+                        </div>
+                        <div class="type-img">
+                            <p><b>หมวดหมู่รูปภาพ</b></p>
+                            <select name="type" id="type">
+                                <option value="img">รูปภาพ</option>
+                            </select>
+                        </div>
+                        <div class="collection-img">
+                            <p><b>เลือกคอลเลกชัน</b></p>
+                            <a href="collectioncreate2.html"><img src="assets/img/upload/createcollec.png" id="collec"
+                                    width="170px"></a>
+                        </div>
+                        <div class="submit">
+                            <button type="submit" id="sub">บันทึกผลงาน</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--endupload-->
+
+    <!--footer-->
+    <footer>
+        <div class="explain">
+            <div class="teamimg">
+                <img src="assets/img/imga.png" width="300px">
+            </div>
+            <h3 id="headexplain">มากกว่ารูปภาพคือความรู้สึก</h3><br>
+            <p id="explain1"> หากคุณ คือ ศิลปินตัวจริง มาร่วมแชร์ผลงานสร้างสรรค์ของคุณ<br><br>
+                หากคุณ คือ ผู้ที่ชื่นชอบศิลปะเป็นชีวิตจิตใจ เชิญชมผลงาน<br>
+                ของศิลปิน ผ่านแอมเมจแกลเลอรี</p>
+        </div>
+
+        <div class="team">
+            <img src="assets/img/team.png" width="700px">
+        </div>
+    </footer>
+    <!--footer-->
+
+
+</body>
+
+</html>
